@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+
+            background-color: rgb(72, 70, 70);
+            height: 500px;
+            width: 500px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            position:absolute;
+            left: 250px;
+
+        }
+
+    .box2{
+        background-color: rgb(200, 191, 191);
+        height: 400px;
+        width: 300px;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    
+    .box3{
+        height: 50px;
+        width: 100%;
+        padding: 0px;
+        border: 0px;
+        background-image: linear-gradient(rgb(248, 240, 240), rgb(154, 154, 152));
+        border-radius: 5px;
+        box-shadow: 3px 3px 15px 3px rgb(59, 60, 59) inset;
+        flex-direction: row;
+        color: white;
+        font-size: 30px;
+    }
+
+
+    .button{
+        background-color: white;
+        height: 50px;
+        width: 50px;
+        top: 150px;
+        border: none;
+        border-radius: 10px;
+        
+
+    }
+
+    .button1{
+
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+
+    
+
+    .operator{
+        background-color: rgb(80, 78, 78);
+        height: 50px;
+        width: 50px;
+        top: 150px;
+        border: none;
+        border-radius: 10px;
+        color: white;
+
+
+    }
+    .operator:hover{
+        background-color: black;
+    }
+    .cbtn{
+        background-color: rgb(250, 8, 8);
+         color: rgb(248, 244, 244);
+    }
+    .cbtn:hover .stars{
+        background-color:white;
+        color: rgb(250, 8, 8);
+    }
+
+    button:hover{
+            width: 50px;
+            background-color: rgb(104, 104, 96);
+
+        }
+
+
+</style>
+</head>
+<body>
+<div class="box">
+    <div class="box2">
+        <div class="box3"></div>
+        <div class="button1">
+            <button class="button" onclick="numberdisplayer('7')">7</button>
+            <button class="button" onclick="numberdisplayer('8')">8</button>
+            <button class="button" onclick="numberdisplayer('9')">9</button>
+            <button class="button operator" onclick="numberdisplayer('+')">+</button>
+        </div>
+        <div class="button1">
+           <button class="button" onclick="numberdisplayer('4')">4</button>
+            <button class="button" onclick="numberdisplayer('5')">5</button>
+            <button class="button" onclick="numberdisplayer('6')">6</button>
+            <button class="button operator" onclick="numberdisplayer('-')">-</button>
+           </div>
+           <div class="button1">
+            <button class="button" onclick="numberdisplayer('1')">1</button>
+            <button class="button" onclick="numberdisplayer('2')">2</button>
+            <button class="button" onclick="numberdisplayer('3')">3</button>
+            <button class="button operator" onclick="numberdisplayer('*')">*</button>
+            </div>
+            <div class="button1">
+            <button class="button cbtn" onclick="clearbox()">c</button>
+            <button class="button" onclick="numberdisplayer('0')">0</button>
+            <button class="button operator" onclick="calculation('')">=</button>
+            <button class="button operator" onclick="numberdisplayer('/')">/</button>
+            </div>
+    </div>
+
+
+</div>
+<script type="text/javascript">
+
+function button(){
+document.getElementById("button1").style.backgroundColor("blue")
+}
+
+function numberdisplayer(num){
+
+document.getElementsByClassName("box3")[0].innerHTML+=num
+
+
+}
+
+function clearbox(){
+    document.getElementsByClassName("box3")[0].innerHTML=""
+
+}
+
+function calculation(){
+    document.getElementsByClassName("box3")[0].innerHTML=eval(document.getElementsByClassName("box3")[0].innerHTML)
+
+}
+
+
+</script>
+    
+</body>
+</html>

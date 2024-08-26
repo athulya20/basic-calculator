@@ -1,0 +1,92 @@
+.box{
+
+    background-color: rgb(72, 70, 70);
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    position:absolute;
+    left: 250px;
+
+}
+
+.box2{
+background-color: rgb(200, 191, 191);
+height: 400px;
+width: 300px;
+padding: 20px;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+
+.box3{
+height: 50px;
+width: 100%;
+padding: 0px;
+border: 0px;
+background-image: linear-gradient(rgb(248, 240, 240), rgb(154, 154, 152));
+border-radius: 5px;
+box-shadow: 3px 3px 15px 3px rgb(59, 60, 59) inset;
+flex-direction: row;
+color: white;
+font-size: 30px;
+}
+
+
+.button{
+background-color: white;
+height: 50px;
+width: 50px;
+top: 150px;
+border: none;
+border-radius: 10px;
+
+
+}
+
+.button1{
+
+display: flex;
+justify-content: space-around;
+
+}
+
+
+
+
+.operator{
+background-color: rgb(80, 78, 78);
+height: 50px;
+width: 50px;
+top: 150px;
+border: none;
+border-radius: 10px;
+color: white;
+
+
+}
+.operator:hover{
+background-color: black;
+}
+.cbtn{
+background-color: rgb(250, 8, 8);
+ color: rgb(248, 244, 244);
+}
+.cbtn:hover .stars{
+background-color:white;
+color: rgb(250, 8, 8);
+}
+
+button:hover{
+    width: 50px;
+    background-color: rgb(104, 104, 96);
+
+}
+
+
